@@ -1,250 +1,126 @@
-# Mikbotamv1.8
+Mikbotamv1.8
 #Changelogs
 
 #01/04/2019 Mikbotam V1.8 krakatau
 
-Fixed  * :
+Fixo * :
 
-Penambahan Limit uptime di settings voucher
-Perbaikan Limit uptime dan penambahan limit qouta
-Perbaikan Script Add Profile hotspot (lock user dan  validty = masa tenggang / user otomatis terhapus setelah mencapai validtiy)
-Perbaikan add PPP profile
-Perbaikan Laporan bulanan
+Adicionado limite de tempo de atividade nas configurações de vouchers Melhoria do limite de tempo de atividade e aumento do limite de cota Melhorias no script Add Profile hotspot (bloquear usuário e validade = período de carência / usuário é excluído automaticamente após atingir a validade) Melhorias para adicionar perfil PPP Melhorias nos relatórios mensais
 
-Fixed Bot *:
+Bot fixo*:
 
-Penambahan fitur history transaksi  bot
-Penambahan fitur cek saldo popup 
-Perbaikan dan penambahan permintaan topup/deposit
-Penambahan Reject Request deposit
-Penambahan Goto login
-Penambahan konfirmasi deposit disertai dengan foto #konfimasi deposit (jumlahdeposit)
-Handle jika anda salah setup voucher setting atau hasil berupa array maka akan dianggap error
-jika terjadi error maka user yang telah dibuat di mikrotik akan otomatis dihapus
-Handle jika kita belum memasukan http:// di settings dns name 
-Terakhir kalinya Kami replace Folder saldo saat Update.zip
-Catatan Cara update : 
+Adicionado recurso de histórico de transações de bot Adicionado recurso de verificação de saldo pop-up Melhorias e adições a solicitações de recarga/depósito Adicionado Rejeitar pedidos de depósito Adicionado login Goto Adicionado uma confirmação de depósito acompanhada de uma foto #confirmação do depósito (valor do depósito) Manipule se você configurar a configuração errada do voucher ou o result for um array será considerado erro, se ocorrer um erro, o usuário que foi criado no proxy será automaticamente deletado. Manipule se não inserimos http:// nas configurações do nome do dns. A última vez que substituímos o balance pasta durante Update.zip Notas Como atualizar:
 
- 
+Substitua a pasta existente, não se esqueça de fazer backup da pasta antes de substituir
 
-Replace folder yang sudah ada jangan lupa bakup folder sebelum replace 
- 
+Tenha cuidado Update.zip substituirá Core.php se você editou o arquivo Core.php, copie-o primeiro ou renomeie o Core.php anterior! Para versões anteriores v1.2, v1.3, v1.4, v1.5, v1.6, v1.7, você pode atualizar diretamente.zip. Se tiver, ajuste o bot para o que você edita, basta copiar e colar complicado? Aprenda o tempo todo. Se você deseja atualizar, faça o download
+Substituir a pasta existente, não se esqueça de fazer backup da pasta antes de substituir. Se você é novo / deseja usar o sqlite, baixe o tutorial Plug N Play no Facebook. você é novo/quer usar mysql faça o download
 
-Hati-hati Update.zip akan mereplace Core.php jika anda sudah edit file Core.php silahkan copy terlebih dahulu atau rename Core.php sebelumnya !
-Untuk versi sebelumnya v1.2, v1.3, v1.4, v1.5, v1.6, v1.7 bisa langsung melakukan update.zip
-Jika sudah silahkan bot disesuaikan dengan  yang anda edit tinggal copy paste ribet? Sekalian belajar 
-Jika inggin Update silahkan download   
-Replace folder yang sudah ada jangan lupa bakup folder sebelum replace ,
-Jika baru / mengginkan Menggunakan sqlite silahkan download         Plug N Play  tutorial ada di  Facebook
-Jika baru / mengginkan Menggunakan Mysql silahkan download      
+O desbalanceamento pode ser executado simultaneamente com o sistema de balanceamento com desbalanceamento em 1 bot. Por padrão, o bot executará apenas saldos, portanto:
 
-Non saldo bisa running secara bersamaan dengan yang sistem saldo dengan non saldo dalam 1 bot .
-Secara default bot akan running  hanya saldo maka dari itu :
+Método de webhook (hospedagem)
 
-Metode Webhook (hosting)
+se você deseja que ambos sejam executados, alterne seu webhook para Balance/Core_Saldo_Nonsaldo.php se você deseja apenas execução não balanceada, aponte o webhook para /Balance/Core_Nonsaldo.php Se você deseja apenas execução balanceada, aponte o webhook para /Balance /Core.php Pesquisa de método longo
 
-jika menginginkan kedua-duanya running silahkan alihkan webhook anda Saldo/Core_Saldo_Nonsaldo.php
-jika menginginkan hanya non saldo yang running silahkan arahkan webhook ke /Saldo/Core_Nonsaldo.php
-Jika Menginginkan hanya saldo yang running silahkan arrahkan webhook ke /Saldo/Core.php
-Metode Long Polling
+Como um webhook, se você deseja que ambos sejam executados, execute seu bot. php Core_Saldo_Nonsaldo.php. Se você deseja apenas execução não balanceada, execute seu bot. php Core_Nonsaldo.php. Se você deseja apenas execução balanceada, execute seu bot .php Core.php
 
-Seperti halnya webhook jika menginginkan kedua-duanya running silahkan ekseksui bot  anda php Core_Saldo_Nonsaldo.php
-.jika menginginkan hanya non saldo yang running silahkan ekseksui bot  anda php Core_Nonsaldo.php
-Jika Menginginkan hanya saldo yang running silahkan ekseksui bot  anda php Core.php
- 
+Grandes saudações. . . .
 
-Salam luar biasa . . . .
+#23/04/2019 Mikbotam V1.7 Corrigir bugs Ep : 2
 
- 
+BOTs fixos *
 
- 
+Corrigido Script Bot/depósito e retornos de chamada de dados Adicionado qualquer comando para ser bloqueado com texto para que comandos que não existem sejam bloqueados com texto Corrigido web ui *
 
- 
+Melhorias na configuração da lista de texto do comprovante Notas Como atualizar:
 
-#23/04/2019 Mikbotam V1.7 Fix bugs  Ep : 2
+Tenha cuidado Update.zip substituirá Core.php se você editou o arquivo Core.php, copie-o primeiro ou renomeie o Core.php anterior! Se tiver, por favor ajuste o bot para o que você edita, basta copiar e colar complicado? Enquanto aprende. Se você deseja atualizar, faça o download
+Substituir a pasta existente. Não se esqueça de fazer backup da pasta antes de substituir. Se você é novo / deseja usar o SQLite, faça o download do tutorial Plug N Play no Facebook. Se você é novo / deseja usar o MySQL, faça o download Grandes
+saudações. . . .
 
-Fixed BOT * 
+#23/04/2019 Mikbotam V1.7
 
-Perbaikan Script Bot /deposit dan callback data
-Penambahan any command ditangkal dengan text jadi perintah yang tidak ada akan di tangkal dengan text
-Fixed web ui *
+BOTs fixos *
 
-Perbaikan Setting Voucher Text list
-Catatan Cara update : 
+Script Bot Repair (Desmontagem total) script de reconstrução Reparar /resource Command Fix Comando adicional /deposit ou /request para funções de usuário solicitar saldo de recarga Interface web fixa *
 
-Hati-hati Update.zip akan mereplace Core.php jika anda sudah edit file Core.php silahkan copy terlebih dahulu atau rename Core.php sebelumnya !
-Jika sudah silahkan bot disesuaikan dengan  yang anda edit tinggal copy paste ribet? Sekalian belajar 
-Jika inggin Update silahkan download   
-Replace folder yang sudah ada jangan lupa bakup folder sebelum replace ,
-Jika baru / mengginkan Menggunakan sqlite silahkan download         Plug N Play  tutorial ada di  Facebook
-Jika baru / mengginkan Menggunakan Mysql silahkan download      
-Salam luar biasa . . . .
- 
+Melhorias na notificação de erro de configurações do voucher Melhorias no script de perfil do usuário *Relatório Verde Net. Corrige pass=user to voucher ID. Remove o limite de tempo de atividade nas configurações do voucher. Observações Como atualizar:
 
+Substitua a pasta existente, não se esqueça de fazer backup da pasta antes de substituir, tenha cuidado Update.zip substituirá Core.php se você editou o arquivo Core.php, copie-o primeiro ou renomeie o Core.php anterior! Se tiver, por favor ajuste o bot para o que você edita, basta copiar e colar complicado? Enquanto aprende. Se você deseja atualizar, faça o download
+Substituir a pasta existente. Não se esqueça de fazer backup da pasta antes de substituir. Se você é novo / deseja usar o SQLite, faça o download do tutorial Plug N Play no Facebook. Se você é novo / deseja usar o MySQL, faça o download Grandes
+saudações. . . .
 
-#23/04/2019 Mikbotam V1.7 
+#21/04/2019 Mikbotam V1.6 SQLITE bugs corrigidos
 
-Fixed BOT * 
+Funcionalidade *
 
-Perbaikan Script Bot (Bongkar total) rebuild script
-Perbaikan /resource Command Fix
-Tambahan perintah  /deposit atau /request untuk user fungsinya request top up saldo
-Fixed web ui *
+Melhorias de bot de script Existem correções relacionadas a scripts de bot que não correspondem às configurações,
 
-Perbaikan notif error Voucher Settings
-Perbaikan Script User Profile  *Report Hijau Net
-Perbaikan pass=user menjadi Id voucher
-Penghapusan Limit uptime di Voucher settings
-Catatan Cara update : 
+Como atualizar e Nota:
 
-Replace folder yang sudah ada jangan lupa bakup folder sebelum replace ,
-Hati-hati Update.zip akan mereplace Core.php jika anda sudah edit file Core.php silahkan copy terlebih dahulu atau rename Core.php sebelumnya !
-Jika sudah silahkan bot disesuaikan dengan  yang anda edit tinggal copy paste ribet? Sekalian belajar 
-Jika inggin Update silahkan download   
-Replace folder yang sudah ada jangan lupa bakup folder sebelum replace ,
-Jika baru / mengginkan Menggunakan sqlite silahkan download         Plug N Play  tutorial ada di  Facebook
-Jika baru / mengginkan Menggunakan Mysql silahkan download      
-Salam luar biasa . . . .
-
-
- 
-
-
-#21/04/2019 Mikbotam V1.6 SQLITE Fixed bugs
-
-Fitur *
-
-Perbaikan Script bot
-Terdapat perbaikan terkait dengan script bot yang tidak sesuai dengan settings,
-
-Cara update dan Catatan: 
-
-Replace folder yang sudah ada jangan lupa bakup folder sebelum replace ,
-Hati-hati Update.zip akan mereplace Core.php jika anda sudah edit file Core.php silahkan copy terlebih dahulu atau rename Core.php sebelumnya !
-Jika sudah silahkan bot disesuaikan dengan  yang anda edit tinggal copy paste ribet? Sekalian belajar 
-Jika menggunakan versi sebelumnya V1.5.3 dan inggin update silahkan download   
-Jika baru / mengginkan Menggunakan sqlite silahkan download         Plug N Play  tutorial ada di  
-Jika baru / mengginkan Menggunakan Mysql silahkan download      
-Salam luar biasa . . . .
-
- 
+Substitua a pasta existente, não se esqueça de fazer backup da pasta antes de substituir, tenha cuidado Update.zip substituirá Core.php se você editou o arquivo Core.php, copie-o primeiro ou renomeie o Core.php anterior! Se tiver, por favor ajuste o bot para o que você edita, basta copiar e colar complicado? Enquanto estiver aprendendo. Se você está usando a versão anterior V1.5.3 e deseja atualizar, faça o download.
+Se você é novo / deseja usar SQLite, faça o download do tutorial Plug N Play em
+Se você é novo / deseja usar o Mysql, faça o download Grandes
+saudações. . . .
 
 #21/04/2019 Mikbotam V1.6 SQLITE
 
-Fitur *
+Funcionalidade *
 
-Fixed PHP 7
-Fixed  Bugs logs
-Fixed  User list table
-Fixed js dan optimalisasi speed
-Fixed bot non Voucher
-Fixed hidden password for ID Voucher
+Corrigidos logs de bugs do PHP 7 Corrigidos Tabela de lista de usuários Corrigido js e otimização de velocidade Corrigido bot não Voucher Corrigido senha oculta para ID Voucher
 
+Corrigido o Live Edit Bot Corrigido o Dasboard remover o erro do voucher do widget Ativar Enviar foto de transmissão para hospedagem na web Adicionar menu Hostpot Adicionar gerenciador de hostpot web ui Adicionar gerenciador de PPP web ui
 
-Fixed Live Edit Bot
-Fixed Dasboard remove widget voucher error
-Enable Send Broadcast photo for web hosting
-Add Hostpot menu 
-Add hostpot manager web ui
-Add PPP manager web ui
+Adicione o tempo de atividade limite opcional nas configurações do voucher ATENÇÃO PARA V 1.6
 
+Existem dois métodos nesta versão e provavelmente continuará para versões futuras Sqlite Version e Mysql Version
 
-Add optional limit uptime on voucher settings
-ATTENTION FOR  V 1.6
+Versão Sqlite - Plug n play Banco de dados portátil armazenado não pode ser aberto com outros aplicativos exceto usando mikbotam e criptografado com 100 caracteres Versão Mysql - Banco de dados armazenado em mysql e geralmente uso phpmyadmin para gerenciador de banco de dados Recomendo usar mysql para grande tráfego de vendas Pasta mikbotam must chmod para 0775 ou 0777 versão Sqlite faça o download e extraia e faça o login imediatamente, Se estiver usando um servidor local ao invés de hospedagem por favor ative o módulo sqlite no php Este tutorial Por favor consulte o post.
 
-Ada dua metode dalam versi ini dan mungkin akan berkelanjut untuk versi kedepannya  Versi Sqlite dan Versi Mysql
+A atualização do zip se aplica a todas as versões do SQLite e mysql
 
-Versi Sqlite  - Plug n play Database disimpan secara portable tidak bisa di buka dengan aplikasi lain kecuali menggunakan mikbotam dan di engkripsi dengan 100 character
-Versi mysql - Database disimpan didalam mysql dan biasanya menggunakan phpmyadmin untuk manager database Saya sarankan memakai mysql untuk traffic penjualan yang besar
-Folder mikbotam wajib chmod ke 0775 atau 0777
-Versi Sqlite silahkan download dan extrack dan langsung login , Jika menggunakan server lokal bukan hosting silahkan aktifkan modul sqlite di php.ini tutorial Silahkan simak di postingan.
+Como atualizar e Nota:
 
-Update zip berlaku untuk semua versi Sqlite maupun mysql
-
-Cara update dan Catatan: 
-
-Replace folder yang sudah ada jangan lupa bakup folder sebelum replace ,
-Hati-hati Update.zip akan mereplace Core.php jika anda sudah edit file Core.php silahkan copy terlebih dahulu atau rename Core.php sebelumnya !
-Jika sudah silahkan bot disesuaikan dengan  yang anda edit tinggal copy paste ribet? Sekalian belajar 
-Jika menggunakan versi sebelumnya V1.5.3 dan inggin update silahkan download   
-Jika baru / mengginkan Menggunakan sqlite silahkan download         Plug N Play  tutorial ada di  
-Jika baru / mengginkan Menggunakan Mysql silahkan download      
-Salam luar biasa . . . .
-
+Substitua a pasta existente, não se esqueça de fazer backup da pasta antes de substituir, tenha cuidado Update.zip substituirá Core.php se você editou o arquivo Core.php, copie-o primeiro ou renomeie o Core.php anterior! Se tiver, por favor ajuste o bot para o que você edita, basta copiar e colar complicado? Enquanto estiver aprendendo. Se você está usando a versão anterior V1.5.3 e deseja atualizar, faça o download.
+Se você é novo / deseja usar SQLite, faça o download do tutorial Plug N Play em
+Se você é novo / deseja usar o Mysql, faça o download Grandes
+saudações. . . .
 
 #14/04/2019 Mikbotam V1.5.3 Azkal
 
-Fitur  *
+Funcionalidade *
 
-Fixed PHP 7
-Fixed  Bugs logs
-Fixed  User list table
-Fixed js dan optimalisasi
-Fixed User Profile add (fix)
-Speed up web ui
-Fixed Nonsaldo Voucher
-Add Edit bot Core.php in web ui 
+Corrigido PHP 7 Corrigido logs de Bugs Corrigido tabela de lista de usuários Corrigido js e otimização Corrigido perfil de usuário add (fix) Acelerar web ui Corrigido Nonsaldo Voucher Adicionar Editar bot Core.php na web ui
 
+Adicionar marcação de registro
 
-Add Record Markup
+Preparação para impressão manual do comprovante Alterar a página atual antes do tempo limite da sessão E muito mais Atualização de bot
 
+Nonsadolo Fixo Pode rodar Topdown Fixo
 
-Persiapan print voucher manual
-Change curent page before ssesion timeout
-Dan masih banyak lagi
-Bot update 
+ATENÇÃO PARA V 1.5
 
-Fixed Nonsadolo Sudah bisa running
-Fixed topdown
- 
-ATTENTION FOR  V 1.5 
+Sistemas não balanceados já podem rodar simultaneamente com o sistema balanceado com não balanceamento em 1 bot. Por padrão, o bot executará apenas saldos, portanto:
 
-Non saldo sudah bisa running secara bersamaan dengan yang sistem saldo dengan non saldo dalam 1 bot .
-Secara default bot akan running  hanya saldo maka dari itu :
+Método de webhook (hospedagem)
 
-Metode Webhook (hosting)
+se você deseja que ambos sejam executados, alterne seu webhook para Balance/Core_Saldo_Nonsaldo.php se você deseja apenas execução não balanceada, aponte o webhook para /Balance/Core_Nonsaldo.php Se você deseja apenas execução balanceada, aponte o webhook para /Balance /Core.php Pesquisa de método longo
 
-jika menginginkan kedua-duanya running silahkan alihkan webhook anda Saldo/Core_Saldo_Nonsaldo.php
-jika menginginkan hanya non saldo yang running silahkan arahkan webhook ke /Saldo/Core_Nonsaldo.php
-Jika Menginginkan hanya saldo yang running silahkan arrahkan webhook ke /Saldo/Core.php
-Metode Long Polling
+Como um webhook, se você deseja que ambos sejam executados, execute seu bot. php Core_Saldo_Nonsaldo.php. Se você deseja apenas execução não balanceada, execute seu bot. php Core_Nonsaldo.php. Se você deseja apenas executar balance, execute seu bot .php Core.php. Observações:
 
-Seperti halnya webhook jika menginginkan kedua-duanya running silahkan ekseksui bot  anda php Core_Saldo_Nonsaldo.php
-.jika menginginkan hanya non saldo yang running silahkan ekseksui bot  anda php Core_Nonsaldo.php
-Jika Menginginkan hanya saldo yang running silahkan ekseksui bot  anda php Core.php
-Cara update dan Catatan: 
+Substitua a pasta existente, não se esqueça de fazer backup da pasta antes de substituir, tenha cuidado Update.zip substituirá Core.php se você editou o arquivo Core.php, copie-o primeiro ou renomeie o Core.php anterior! Se tiver, por favor ajuste o bot para o que você edita, basta copiar e colar complicado? Enquanto aprende Grandes saudações. . . .
 
-Replace folder yang sudah ada jangan lupa bakup folder sebelum replace ,
-Hati-hati Update.zip akan mereplace Core.php jika anda sudah edit file Core.php silahkan copy terlebih dahulu atau rename Core.php sebelumnya !
-Jika sudah silahkan bot disesuaikan dengan  yang anda edit tinggal copy paste ribet? Sekalian belajar 
-Salam luar biasa . . . .
+Transferências:
 
-Download : 
+12/04/2019 Mikbotam V1.5 Estável
+Funcionalidade *
 
+Corrigido PHP 7 Corrigido Bugs logs Adicionar tipo caractere Adicionar cor Qrcode Adicionar recurso sem saldo /Ainda não corrigido será atualizado em breve Adicionar exportação por mês Adicionar atualização de notícias Adicionar nova tabela Banco de dados Adicionar ferramentas Definir webhook Para hospedar outros ATENÇÃO PARA V 1.5
 
-# 12/04/2019 Mikbotam V1.5  Stable
+Como há um novo recurso, crie um novo banco de dados de importação com o banco de dados Newdatabase.sql, se você quiser usar o banco de dados antigo, importe novamente o banco de dados com o arquivo Dropandinsert.sql anterior. Portanto, há a necessidade de redefinir a interface do usuário da web do mikbotam, pedimos desculpas pela magnitude,
 
-FItur  * 
+Se não atualizar o banco de dados
 
-Fixed PHP 7
-Fixed  Bugs logs
-Add Type character
-Add Color Qrcode
-Add fitur non saldo /Belum fix akan segara di update
-Add export Per bulan
-Add news update
-Add new table  Database 
-Add Tools Setwebhook Untuk hosting
-other
-ATTENTION FOR  V 1.5
+1.bot irá travar e travar 2.Você não pode usar novos recursos. 3.Você não pode receber a próxima atualização porque ela usará esse novo banco de dados posteriormente,
 
-Dikarenakan terdapat fitur baru silahkan untuk Membuat database baru import dengan database Newdatabase.sql jika mengingginkan menggunakan database lama
-import ulang database dengan file  Dropandinsert.sql belumnya Kami mohon maaf yang sebesar besarnya kami pastikan hal ini tidak akan terjadi lagi dan Perlu diketahui data anda sepenuhnya akan HILANG! Maka dari itu ada perlu setting ulang di web ui mikbotam kami mohon maaf yang sebesar besarnya,
-
-Jika tidak memperbarui database 
-
-1.bot akan error dan akan macet
-2.Anda tidak bisa menggunakan fitur baru .
-3.Anda tidak dapat menerima update selanjutnya karena nantinya akan menggunakan database yang baru ini,
-
-Sekali lagi kami mohon maaf atas  Moment ini, atas perhatiannya dan dukungannya kami ucapkan terimakasih jangan lupa bahagia :-D
+Mais uma vez pedimos desculpas por este momento, pela atenção e apoio, agradecemos, não se esqueça de ser feliz :-D
